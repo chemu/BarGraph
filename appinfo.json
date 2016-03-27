@@ -1,0 +1,56 @@
+{
+    "appKeys": {
+        "KEY_POP": 1,
+        "KEY_TEMPERATURE": 0
+    },
+    "capabilities": [
+        "location"
+    ],
+    "companyName": "chemu",
+    "enableMultiJS": true,
+    "longName": "BarGraph",
+    "projectType": "native",
+    "resources": {
+        "media": [
+            {
+                "characterRegex": "[0-9:]",
+                "file": "fonts/SF Square Head Condensed.ttf",
+                "name": "FONT_SFSHC_74",
+                "targetPlatforms": null,
+                "type": "font"
+            },
+            {
+                "characterRegex": "[0-9:]",
+                "file": "fonts/SF Square Head.ttf",
+                "name": "FONT_SF_SQUARE_HEAD_45",
+                "targetPlatforms": null,
+                "type": "font"
+            },
+            {
+                "file": "fonts/SF Square Head.ttf",
+                "name": "FONT_SF_SQUARE_HEAD_20",
+                "targetPlatforms": null,
+                "trackingAdjust": 1,
+                "type": "font"
+            },
+            {
+                "file": "images/bt-bar-white.png",
+                "name": "BT_WHITE",
+                "targetPlatforms": null,
+                "type": "bitmap"
+            }
+        ]
+    },
+    "sdkVersion": "3",
+    "shortName": "BarGraph",
+    "targetPlatforms": [
+        "aplite",
+        "basalt",
+        "chalk"
+    ],
+    "uuid": "466916a5-3841-4c97-8a7b-33cde970f3b3",
+    "versionLabel": "1.0",
+    "watchapp": {
+        "watchface": true
+    }
+}
