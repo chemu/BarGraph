@@ -1,4 +1,4 @@
-var myAPIKey = '7fad8ff85bf40ba9';
+var myAPIKey = '';
 
 var xhrRequest = function (url, type, callback) {
   var xhr = new XMLHttpRequest();
@@ -10,7 +10,7 @@ var xhrRequest = function (url, type, callback) {
 };
 
 function locationSuccess(pos) {
-  // Construct URL http://api.wunderground.com/api/Your_Key/geolookup/conditions/forecast/q/Australia/Sydney.json
+  // Construct URL 
   var url = "http://api.wunderground.com/api/" + myAPIKey + "/conditions/forecast/q/" +
       pos.coords.latitude + "," + pos.coords.longitude + ".json";
   console.log("url=" + url);
@@ -21,11 +21,11 @@ function locationSuccess(pos) {
       // responseText contains a JSON object with weather info
       var json = JSON.parse(responseText);
 
-      // Temperature in Kelvin requires adjustment
+      // Temperature
       var temperature = Math.round(json.current_observation.feelslike_c);
       console.log("Temperature is " + temperature);
 
-      // Conditions
+      // Probability of precipitation
       var pop = Math.round(json.forecast.simpleforecast.forecastday[0].pop);      
       console.log("Pop is " + pop);
       
